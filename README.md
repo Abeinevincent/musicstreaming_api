@@ -26,7 +26,7 @@ DEEZER_SECRET_KEY=your-secret-key
 DEEZER_API_SEARCH_URL=https://api.deezer.com/search
 
 # Start the development server
-npm start
+npm run dev
 
 # Run tests
 npm test
