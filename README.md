@@ -6,7 +6,7 @@ Extra functionalities such as authentication and authorisation will come in the 
 
 ## Installation
 
-To run the Music Streaming App locally, follow these steps:
+To run the Music Streaming API locally, follow these steps:
 
 ```sh
 # Clone this repository to your local machine
