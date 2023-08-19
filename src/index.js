@@ -13,8 +13,8 @@ const { swaggerSpec } = require("../swaggerconfig");
 
 // List of allowed origins
 const allowedOrigins = [
-  process.env.DEEZER_API_HOME_URL,
-  process.env.MY_API_HOME_URL,
+  // process.env.DEEZER_API_HOME_URL,
+  // process.env.MY_API_HOME_URL,
   "http://localhost:8000",
   "http://localhost:5173",
 ];
@@ -22,7 +22,7 @@ const allowedOrigins = [
 // Use cors middleware with allowed origins
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "*",
   })
 );
 
