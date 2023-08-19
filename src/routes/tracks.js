@@ -4,19 +4,14 @@ const { searchTracks } = require("../controllers/tracks");
  * Defines routes related to tracks.
  * @param {import("express").Router} router - Express router.
  *
-//  * @swagger
-//  * tags:
-//  *   name: Streaming API Tracks End Point
-//  *   description: This endpoint returns a list of tracks of a particular artist from the search query
-//  
-*/
+ */
 
 const tracksRoute = (router) => {
   /**
    * @swagger
    * tags:
    *   name: Streaming API Tracks End Point
-   *   description: This endpoint returns a list of tracks based on the search query.
+   *   description: This endpoint returns a list of tracks based on the search query or artist id.
    *
    * /tracks:
    *   get:

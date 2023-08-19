@@ -12,14 +12,18 @@ const { swaggerSpec } = require("../swaggerconfig");
 // MIDDLEWARES *************************************
 
 // List of allowed origins
-// const allowedOrigins = ["https://www.example.com", "https://anotherdomain.com"];
+const allowedOrigins = [
+  process.env.DEEZER_API_HOME_URL,
+  process.env.MY_API_HOME_URL,
+  "http://localhost:8000",
+  "http://localhost:5173",
+];
 
 // Use cors middleware with allowed origins
 app.use(
-  cors()
-  //     {
-  //   origin: allowedOrigins
-  // }
+  cors({
+    origin: allowedOrigins,
+  })
 );
 
 app.use(express.json());
